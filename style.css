@@ -293,33 +293,46 @@ html {
     top:30%;
     font-weight: 600;
   }
-  .testimonials-section .buttons button {
-    position: fixed;
-    top: 55%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    cursor: pointer;
-    width: 20%;
+
+  .testimonial-section .buttons {
+    display: flex;
+    width: 320px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .testimonial-section .buttons button {
+    position: relative;
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  .testimonial-section .buttons button.prevButton {
+    margin-left: 202%;
+    margin-top: -20%;
+    font-size: 20px;
+  }
+
+  .testimonial-section .buttons button.nextButton {
+    margin-right: -202%;
+    margin-top: -20%;
+    font-size: 20px;
+  }
+
+  .testimonial-section .buttons button:hover {
+    color: grey;
   }
 
 
-  .testimonials-section .buttons button:first-child {
+  .testimonial-section .buttons button:first-child {
     left: 0;
   }
   
-  .testimonials-section .buttons button:last-child {
+  .testimonial-section .buttons button:last-child {
     right: 0;
   }
 
-  .testimonials-section .buttons button .bi-arrow-left {
-    position: relative;
-    left:4%;
-  }
-
-  .testimonials-slider .buttons button .bi-arrow-right {
-    position: relative;
-    right: -44%;
-  }
+  
 
   /* hero style */
 
@@ -612,6 +625,23 @@ html {
     top: 10%;
     font-weight: 500;
     font-size: 24px;
+  }
+
+  .testimonial-section .buttons {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    align-items: normal;
+    padding-right: 35px;
+    padding-bottom: 20px;
+  }
+
+  .testimonial-section .buttons button.prevButton {
+    font-size: 20px;
+  }
+
+  .testimonial-section .buttons button.nextButton {
+    font-size: 20px;
   }
 
   /* hero style section */
